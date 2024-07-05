@@ -1,0 +1,62 @@
+import 'package:flutter/cupertino.dart';
+
+const CrossAxisAlignment crossStart = CrossAxisAlignment.start;
+const CrossAxisAlignment crossCenter = CrossAxisAlignment.center;
+const CrossAxisAlignment crossEnd = CrossAxisAlignment.end;
+const CrossAxisAlignment crossBaseLine = CrossAxisAlignment.baseline;
+const WrapAlignment wrapSB = WrapAlignment.spaceBetween;
+const WrapAlignment wrapCenter = WrapAlignment.center;
+const WrapAlignment wrapSE = WrapAlignment.spaceEvenly;
+const WrapAlignment wrapSA = WrapAlignment.spaceAround;
+const WrapAlignment wrapEnd = WrapAlignment.end;
+const WrapAlignment wrapStart = WrapAlignment.start;
+
+const MainAxisAlignment mainStart = MainAxisAlignment.start;
+const MainAxisAlignment mainCenter = MainAxisAlignment.center;
+const MainAxisAlignment mainEnd = MainAxisAlignment.end;
+const MainAxisAlignment mainSA = MainAxisAlignment.spaceAround;
+const MainAxisAlignment mainSB = MainAxisAlignment.spaceBetween;
+const MainAxisAlignment mainSE = MainAxisAlignment.spaceEvenly;
+
+const AlignmentDirectional alignDTE = AlignmentDirectional.topEnd;
+const AlignmentDirectional alignDC = AlignmentDirectional.center;
+const AlignmentDirectional alignDTS = AlignmentDirectional.topStart;
+const AlignmentDirectional alignDTC = AlignmentDirectional.topCenter;
+const AlignmentDirectional alignDBC = AlignmentDirectional.bottomCenter;
+const AlignmentDirectional alignDBE = AlignmentDirectional.bottomEnd;
+const AlignmentDirectional alignDBS = AlignmentDirectional.bottomStart;
+const BoxFit fitCover = BoxFit.cover;
+const BoxFit fitFill = BoxFit.fill;
+const BoxFit fitNone = BoxFit.none;
+const BoxFit fitContain = BoxFit.contain;
+const BoxFit fitWidth = BoxFit.fitWidth;
+const BoxFit fitHeight = BoxFit.fitHeight;
+const BoxFit fitScaleDown = BoxFit.scaleDown;
+const Axis horizontal = Axis.horizontal;
+const Axis vertical = Axis.vertical;
+const MainAxisSize max = MainAxisSize.max;
+const MainAxisSize min = MainAxisSize.min;
+var errorMessage = 'Please try again';
+var errorSomethingWentWrong = 'Something Went Wrong';
+var errorThisFieldRequired = 'This field is required';
+var errorInternetNotAvailable = 'Your internet is not working';
+
+var customDialogHeight = 140.0;
+var customDialogWidth = 220.0;
+
+const currencyRupee = '₹';
+const currencyDollar = '\$';
+const currencyEuro = '€';
+const playStoreBaseURL = 'https://play.google.com/store/apps/details?id=';
+const appStoreBaseURL = 'https://apps.apple.com/in/app/';
+const facebookBaseURL = 'https://www.facebook.com/';
+const instagramBaseURL = 'https://www.instagram.com/';
+const linkedinBaseURL = 'https://www.linkedin.com/in/';
+const twitterBaseURL = 'https://twitter.com/';
+const youtubeBaseURL = 'https://www.youtube.com/';
+const redditBaseURL = 'https://reddit.com/r/';
+const telegramBaseURL = 'https://t.me/';
+const facebookMessengerURL = 'https://m.me/';
+const whatsappURL = 'https://wa.me/';
+const googleDriveURL = 'https://docs.google.com/viewer?url=';
+const selectLanCode = 'selected_language_code';
