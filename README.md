@@ -20,26 +20,16 @@ import 'package:ind_utils/ind_utils.dart';
 
 ## Example
 
-Use for SizedBox, Padding , Text , Show Toast , Get height and width
+Use for SizedBox, Padding , Get height and width
 of Screen. No Need to write long code for these
-
 - Padding
-- Text
-- Go to Next Page
 - Log
-- Show Toast Message
 - Get Height and Width of Screen
-- SizedBox
-- More Widgets
-
 <hr>
-
 <table>
 <tr>
 <td>
-
 ```dart
-
 class INDWidgets extends StatelessWidget {
   const INDWidgets({super.key});
 
