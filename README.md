@@ -47,7 +47,7 @@ class INDWidgets extends StatelessWidget {
           const Text("Welcome").pO(b: 10, l: 10, r: 10, t: 10), // Padding EdgeInsets.only
           const Text("Welcome").pall(a: 10), // Padding EdgeInsets.all
           50.hBox, // Give Space with Two Widgets Vertical
-          50.wBox, // Give Space with Two Widgets Horizontal
+          50.wBox, // Give width in SizedBox like SizedBox(width: 50)
         ],
       ),
     );
