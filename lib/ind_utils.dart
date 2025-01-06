@@ -13,8 +13,8 @@ import 'src/helper/pref_key.dart';
 import 'src/styles/app_color.dart';
 import 'src/styles/app_edge.dart';
 import 'src/styles/style.dart';
-export 'src/utils/log_print.dart';
+// export 'src/utils/log_print.dart';
 
 part  'src/gen/assets_gen.dart';
 part 'src/gen/screen_gen.dart';
-part 'src/gen/helper_gen.dart';
+part 'helper_gen.dart';

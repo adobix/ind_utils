@@ -1,4 +1,4 @@
-part of '../../ind_utils.dart';
+part of 'ind_utils.dart';
 void helperGen() {
   // Assets File Here
   final currentDir = Directory.current;
