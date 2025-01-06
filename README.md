@@ -9,7 +9,7 @@ of Screen. No Need to write long code for these`
 
 ```yaml
 dependencies:
-  ind_utils: ^0.1.0
+  ind_utils: ^0.1.8
 ```
 
 1. Import the package and use it in your Flutter App.
