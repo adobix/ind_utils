@@ -1,5 +1,7 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
+
+import 'package:flutter/material.dart';
+// import 'package:flutter/foundation.dart';
 
 class PrintLog {
   final String message;
@@ -114,9 +116,7 @@ class PrintLog {
   }
 
   debugModePrint(_) {
-    if (kDebugMode) {
-      print(_);
-    }
+    print(_);
   }
 }
 

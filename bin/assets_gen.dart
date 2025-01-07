@@ -1,8 +1,7 @@
 import 'dart:io';
-
-import 'package:ind_utils/src/features/screen/screen_controller_gen.dart';
-import 'package:ind_utils/src/styles/app_assets.dart';
-import 'package:ind_utils/src/styles/style.dart';
+import '../bin/src/controller/controller_gen.dart';
+import '../bin/src/styles/app_assets.dart';
+import '../bin/src/styles/style.dart';
 
 void main() {
   assetGen();

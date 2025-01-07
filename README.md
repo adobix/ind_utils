@@ -1,66 +1,84 @@
 # ind_utils
 
-ind_utils package use this package for SizedBox, Padding , Text , Show Toast , Get height and width
-of Screen. No Need to write long code for these` 
+ind_utils package use this package for Generate Assets file `
 
 ## Installation
 
-1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
-
 ```yaml
 dependencies:
-  ind_utils: ^0.1.8
+  ind_utils: ^1.0.2
 ```
-
-1. Import the package and use it in your Flutter App.
-
-```dart
-import 'package:ind_utils/ind_utils.dart';
+## Run the generator
+To execute the following command: - when u will run this cmd you will get
+- Here Below 👇👇👇.
 ```
-
-## Example
-
-Use for SizedBox, Padding , Text , Show Toast , Get height and width
-of Screen. No Need to write long code for these
-
-- Padding
-- Log
-- Get Height and Width of Screen
-
-<hr>
-
-<table>
-<tr>
-<td>
-
-```dart
-
-class INDWidgets extends StatelessWidget {
-  const INDWidgets({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: [
-          Text("Welcome").sym(v: 10, h: 20), // Padding EdgeInsets.symmetric
-          const Text("Welcome").pO(b: 10, l: 10, r: 10, t: 10), // Padding EdgeInsets.only
-          const Text("Welcome").pall(a: 10), // Padding EdgeInsets.all
-          50.hBox, // Give Space with Two Widgets Vertical
-          50.wBox, // Give width in SizedBox like SizedBox(width: 50)
-        ],
-      ),
-    );
-  }
-}
+flutter pub run ind_utils:screen_gen profile_screen profile_controller
+```
+```
+lib/
+   ├─ src/
+   │   └─ feature/
+   │    ├─ screen/
+   │    │  └─ profile_screen.dart
+   │    ├─ controller/
+   │    │  └─ profile_controller.dart       
+```
+OR-
 
 ```
+flutter pub run ind_utils:screen_gen profile_screen
+```
+```
+lib/
+   ├─ src/
+   │   └─ feature/
+   │    ├─ screen/
+   │    │  └─ profile_screen.dart
+   │    ├─ controller/
+   │    │  └─ profile_screen_controller.dart       
+```
 
-</td>
-<td>
-</td>
-</tr>
-</table>
+## Run the generator:
+To execute the following command: -  Assets file and Put images in class
+- Here 👇👇👇.
+```
+flutter pub run ind_utils:assets_gen
+```
+
+## Run the generator:
+To execute the following command: -  Helper file and there define colors , api_url
+- Here 👇👇👇.
+```
+flutter pub run ind_utils:helper_gen
+```
+
+## Print Type
+Just use Like This: You can Print with different Icon just change end type :
+```
+printLog("Method :", "POST").method;// "⚙️ Method : Get";
+```
+
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/img_1.png)
+```
+printLog("Api URL:", url).link;//"🔗 Api URL : --> your url"
+```
+
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/img_2.png)
+```
+printLog("Header :", header).header; //"📝 Header : --> your header"
+```
+
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/img_3.png)
+```
+printLog("Response Success: ", response).success; // "✅ Response Success: --> your response"
+```
+
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/img_4.png)
+```
+printLog("Request Data: ", request).info; // "ℹ️ Request Data:: --> your Request"
+```
+
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/img_5.png)
 
 ## Next Goals
 

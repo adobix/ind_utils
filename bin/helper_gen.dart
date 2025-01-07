@@ -1,6 +1,7 @@
 import 'dart:io';
-import 'package:ind_utils/src/features/screen/screen_controller_gen.dart';
-import 'package:ind_utils/src/helper/helper.dart';
+import '../bin/src/controller/controller_gen.dart';
+import '../bin/src/helper/helper.dart';
+
 
 void main() {
   helperGen();
@@ -12,7 +13,7 @@ void helperGen() {
   final libDir = Directory('${flutterProjectRoot.path}/lib');
 
   /// Create helper directory in src file
-  final helperDir = Directory('${libDir.path}/src/helper');
+  final helperDir = Directory('${libDir.path}/helper');
   if (!helperDir.existsSync()) helperDir.createSync(recursive: true);
 
   /// Create Helper dart file with some import of helper
