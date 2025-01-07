@@ -1,21 +1,24 @@
 name: ind_utils
-description: ind_utils package use this package for SizedBox and also Padding. No Need to write long code for these`
-version: 0.1.0
+description: 'Ind_utils package to simplify SizedBox and Padding usage, reducing repetitive code.'
+version: 1.0.2
 homepage: https://github.com/ansaralisahh/ind_utils.git
 license: MIT
 
-
 environment:
   sdk: '>=3.0.6 <4.0.0'
-  flutter: ">=1.17.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  path: ^1.8.0
 
-dev_depende\ies:
+dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
 
-flutter:
+executables:
+  helper_gen: helper_gen.dart
+  assets_gen: assets_gen.dart
+  screen_gen: screen_gen.dart
