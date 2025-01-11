@@ -50,6 +50,7 @@ printLog("Method :", "POST").method;// "⚙️ Method : Get";
 ```
 
 ![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_1.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_1.png)
 ```
 printLog("Api URL:", url).link;//"🔗 Api URL : --> your url"
 ```

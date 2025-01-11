@@ -32,7 +32,7 @@ String generateController(String controllerClassName) {
 import 'package:flutter/material.dart';
 
 class $controllerClassName extends ChangeNotifier {
-  // Controller logic here
+  // $controllerClassName logic here
 }
 ''';
 }
@@ -44,7 +44,7 @@ String generateRepository(String repositoryName, String? repoInterface) {
 import 'package:flutter/material.dart';
 
 class $repositoryName {
-  // Repository logic here
+  // $repositoryName logic here
 }
 ''';
   } else {
@@ -52,19 +52,19 @@ class $repositoryName {
 import 'package:flutter/material.dart';
 
 class $repositoryName  implements $repoInterface{
-  // Repository logic here
+  // $repositoryName logic here
 }
 ''';
   }
 }
 
 /// controller.dart
-String generateRepositoryInterface(String controllerClassName) {
+String generateRepositoryInterface(String repoClassName) {
   return '''
 import 'package:flutter/material.dart';
 
-abstract class $controllerClassName {
-  // Controller logic here
+abstract class $repoClassName {
+  // $repoClassName logic here
 }
 ''';
 }
