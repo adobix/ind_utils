@@ -49,27 +49,27 @@ Just use Like This: You can Print with different Icon just change end type :
 printLog("Method :", "POST").method;// "⚙️ Method : Get";
 ```
 
-![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/assets/refs/heads/main/img_1.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_1.png)
 ```
 printLog("Api URL:", url).link;//"🔗 Api URL : --> your url"
 ```
 
-![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/assets/refs/heads/main/img_2.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_2.png)
 ```
 printLog("Header :", header).header; //"📝 Header : --> your header"
 ```
 
-![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/assets/refs/heads/main/img_3.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_3.png)
 ```
 printLog("Response Success: ", response).success; // "✅ Response Success: --> your response"
 ```
 
-![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/assets/refs/heads/main/img_4.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_4.png)
 ```
 printLog("Request Data: ", request).info; // "ℹ️ Request Data:: --> your Request"
 ```
 
-![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/assets/refs/heads/main/img_5.png)
+![Image Description](https://raw.githubusercontent.com/adobix/ind_utils/refs/heads/main/assets/img_5.png)
 
 ## Next Goals
 
