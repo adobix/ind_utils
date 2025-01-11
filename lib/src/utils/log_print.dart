@@ -1,13 +1,11 @@
 import 'dart:convert';
-
-import 'package:flutter/material.dart';
-// import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart';
 
 class PrintLog {
   final String message;
-  final dynamic data;
+  final dynamic res;
 
-  PrintLog(this.message, this.data);
+  PrintLog(this.message, this.res);
 
   String get microphone => _print('🎤');
 
@@ -53,7 +51,7 @@ class PrintLog {
 
   _print(String emoji) {
     final logMessage = '$emoji $message';
-    if (data == null) {
+    if (res == null) {
       int length = logMessage.length;
       debugPrint('⊸${'⊸' * length}');
       debugPrint('⤒ $message');
@@ -61,36 +59,22 @@ class PrintLog {
       return;
     }
 
-    if (data.runtimeType == String) {
-      String d = data;
+    if (res.runtimeType == String) {
+      String d = res;
       if (d.isEmpty) {
         return;
       }
       int length = logMessage.length + d.length + 5;
       debugPrint('⊸${'⊸' * length}');
-      debugPrint('⤒ $logMessage $data ');
+      debugPrint('⤒ $logMessage $res ');
       debugPrint('⊸${'⊸' * length}');
       return logMessage;
     }
-    if (data is Map) {
+    if (res is Map) {
       debugModePrint('⊸' * 90);
       debugPrint('⤒ $logMessage ');
-      _printJson(data);
+      _printJson(res);
       return logMessage;
-    }
-
-    void _printListJson(List dataList) {
-      if (dataList.isEmpty) return;
-      for (int i = 0; i < dataList.length; i++) {
-        if (dataList[i] is Map) {
-          debugModePrint('List item $i:');
-          _printJson(dataList[i]);
-        } else {
-          debugModePrint('List item $i: ${dataList[i]}');
-        }
-      }
-      debugModePrint('⊸' * 90);
-      return;
     }
     return logMessage;
   }
@@ -114,9 +98,10 @@ class PrintLog {
       debugModePrint('⤒ ${lines[i]}');
     }
   }
-
-  debugModePrint(_) {
-    print(_);
+  debugModePrint(p0) {
+    if (kDebugMode) {
+      print(p0);
+    }
   }
 }
 

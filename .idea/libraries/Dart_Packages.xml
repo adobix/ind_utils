@@ -44,10 +44,24 @@
             </list>
           </value>
         </entry>
+        <entry key="dart_console">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/dart_console-1.2.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="fake_async">
           <value>
             <list>
               <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="ffi">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.3/lib" />
             </list>
           </value>
         </entry>
@@ -61,8 +75,8 @@
         <entry key="flutter_lints">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-4.0.0/lib" />
               <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-4.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -70,6 +84,20 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../FlutterProject/FlutterSdk/packages/flutter_test/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="interact">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/interact-2.2.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="intl">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1/lib" />
             </list>
           </value>
         </entry>
@@ -97,8 +125,8 @@
         <entry key="lints">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/lints-4.0.0/lib" />
               <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1/lib" />
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/lints-4.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -123,24 +151,10 @@
             </list>
           </value>
         </entry>
-        <entry key="nested">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="path">
           <value>
             <list>
               <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="provider">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2/lib" />
             </list>
           </value>
         </entry>
@@ -193,6 +207,13 @@
             </list>
           </value>
         </entry>
+        <entry key="tint">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/tint-2.0.1/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="vector_math">
           <value>
             <list>
@@ -207,6 +228,13 @@
             </list>
           </value>
         </entry>
+        <entry key="win32">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.10.0/lib" />
+            </list>
+          </value>
+        </entry>
       </option>
     </properties>
     <CLASSES>
@@ -216,9 +244,13 @@
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/dart_console-1.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.3/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-4.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/interact-2.2.0/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.7/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.8/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib" />
@@ -227,17 +259,17 @@
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.15.0/lib" />
-      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/lib" />
-      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.12.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.3.0/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.3/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/tint-2.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib" />
       <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.10.0/lib" />
       <root url="file://$PROJECT_DIR$/../FlutterProject/FlutterSdk/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$PROJECT_DIR$/../FlutterProject/FlutterSdk/packages/flutter/lib" />
       <root url="file://$PROJECT_DIR$/../FlutterProject/FlutterSdk/packages/flutter_test/lib" />
