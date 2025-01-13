@@ -9,6 +9,7 @@
 .buildlog/
 .dart_tool/
 .history
+./bin
 .svn/
 .swiftpm/
 migrate_working_dir/

@@ -62,9 +62,9 @@ class $repositoryName  implements $repoInterface{
 String generateRepositoryInterface(String repoClassName) {
   return '''
 import 'package:flutter/material.dart';
-
+// $repoClassName logic here
 abstract class $repoClassName {
-  // $repoClassName logic here
+  
 }
 ''';
 }

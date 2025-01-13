@@ -8,19 +8,11 @@ environment:
   sdk: '>=3.0.6 <4.0.0'
   flutter: ">=3.0.0"
 
-
-executables:
-  ind_utils:
-
-
 dependencies:
   flutter:
     sdk: flutter
   path: ^1.8.0
   interact: ^2.2.0
-  provider: ^6.1.2
-  dio: ^5.7.0
-  shared_preferences: ^2.3.5
 
 dev_dependencies:
   flutter_test:
