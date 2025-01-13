@@ -1,7 +1,7 @@
 name: ind_utils
 description: 'Ind_utils package to simplify SizedBox and Padding usage, reducing repetitive code.'
 version: 1.0.3
-homepage: https://github.com/ansaralisahh/ind_utils.git
+homepage: https://github.com/ansaralisah/ind_utils.git
 license: MIT
 
 environment:
