@@ -1,4 +1,25 @@
+## 1.0.5
+
+1. Generate Directory with screen generator
+2. Fix Error Of assets generator. Now where you wanna generate assets file Enter that Directory and put
+   There.
+
+## 1.0.4
+
+* Widget Directory with screen generator
+
 ## 1.0.3
 
-* ind_utils package use this package for SizedBox, Padding , Text , Show Toast , Get height and width
-  of Screen.
+* Generate Repository and Interface with screen generator
+
+## 1.0.2
+
+* Generate Controller and Screen with screen generator
+
+## 1.0.1
+
+1. Add support List data of Print Log 
+
+## 1.0.0
+1. Generate Style code with App Edge File with style generator
+2. Fix Error of Print Log 

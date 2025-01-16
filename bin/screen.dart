@@ -48,7 +48,7 @@ void main() {
   }
 
   /// widget directory
-  final widgetInput = Input(prompt: 'Do you want to provide a Widget Directory? (y/n): ').interact();
+  final widgetInput = Input(prompt: 'Do you want Widget Directory? (y/n): ').interact();
   if (widgetInput == 'y') {
     /// creating widget directory here ---
     final widgetDirName = Directory('${screenNameDir.path}/widgets');
@@ -66,6 +66,19 @@ void main() {
     }
   } else {
     CliLogger.info("Widget Skipped due to wrong input");
+  }
+
+  /// model directory
+  final modelInput = Input(prompt: 'Do you want to Model Directory? (y/n): ').interact();
+  if (modelInput == 'y') {
+    /// creating widget directory here ---
+    final widgetDirName = Directory('${screenNameDir.path}/Model');
+    if (!widgetDirName.existsSync()) {
+      widgetDirName.createSync();
+      CliLogger.repositoryLog("Model Directory Generated Successfully");
+    }
+  } else {
+    CliLogger.info("Model Skipped due to wrong input");
   }
 
   /// if you wanna provider repository

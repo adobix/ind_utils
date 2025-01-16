@@ -26,6 +26,12 @@ class AppEdge {
     return EdgeInsets.only(left: l, right: r, top: t, bottom: b);
   }
 }
+
+extension SizedExtensions on num {
+  Widget get wBox => SizedBox(width: toDouble());
+  Widget get hBox => SizedBox(height: toDouble());
+}
+
 ''';
 }
 String genAppColor() {
