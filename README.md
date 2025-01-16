@@ -33,7 +33,7 @@ dart pub run ind_utils:screen
 - Assets file and Put images in class
 - Here 👇👇👇
 1. Make sure Stay in Project Directory
-2. Go that directory where you wanna This.
+2. Go that directory where you wanna Create This.
 
 - To execute the following command: 
 ```
@@ -41,7 +41,7 @@ dart pub run ind_utils:assets
 ```
 ## Run the generator:
 - Styling Code Like App color , EdgeInsets
-- Here 👇👇👇 - First Go that directory where you wanna This.
+- Here 👇👇👇 - First Go that directory where you wanna Create This.
 - To execute the following command:
 ```
 dart pub run ind_utils:style
