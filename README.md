@@ -1,3 +1,11 @@
+
+<div align="center">
+  <h1 align="center" style="font-size: 50px;">🍃 Icons Launcher 🍃</h1>
+  <p align="center">
+  A command-line tool that simplifies the task of updating your Flutter app's launcher icon. Full flexibility allows you to only update the launcher icon for specific platforms as needed.
+ </p>
+</div>   
+   
 # ind_utils
 
 ind_utils package use this package for Generate Assets file `
@@ -33,7 +41,7 @@ dart pub run ind_utils:screen
 - Assets file and Put images in class
 - Here 👇👇👇
 1. Make sure Stay in Project Directory
-2. Go that directory where you wanna Create This.
+2. Go that directory where you wanna Create.
 
 - To execute the following command: 
 ```
