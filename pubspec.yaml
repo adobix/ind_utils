@@ -1,7 +1,7 @@
 name: ind_utils
 description: 'Ind_utils package to simplify SizedBox and Padding usage, reducing repetitive code.'
 version: 1.0.3
-homepage: https://github.com/ansaralisahh/ind_utils.git
+homepage: https://github.com/ansaralisah/ind_utils.git
 license: MIT
 
 environment:
@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   path: ^1.8.0
   interact: ^2.2.0
 
@@ -18,4 +19,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-

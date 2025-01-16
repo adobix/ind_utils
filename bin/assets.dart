@@ -1,5 +1,6 @@
 import 'package:ind_utils/src/utils/cli_logger.dart';
 import 'package:ind_utils/src/utils/utils.dart';
+import 'package:interact/interact.dart';
 import 'package:path/path.dart' as p;
 import 'dart:io';
 
@@ -13,14 +14,18 @@ void main() {
     CliLogger.error('Please Create Assets File And Insert Images', level: CliLoggerLevel.two);
     exit(1);
   }
-
   ///
   final getAssetsDirectory = Directory('${flutterProjectRoot.path}/assets');
-  final getLibDirectory = Directory('${flutterProjectRoot.path}/lib');
   final assetDirs = getAssetsDirectory.listSync(recursive: false).whereType<Directory>().toList();
   final folderNames = assetDirs.map((dir) => p.basename(dir.path)).toList();
+  ///
+  print("Where your wanna create this file: example - lib/src/styles/ ");
+  final appAssetsInput = Input(prompt: 'Where your wanna create this file: ').interact();
+  final getLibDirectory = Directory('${flutterProjectRoot.path}/$appAssetsInput');
+  if(!getLibDirectory.existsSync()){
+    getLibDirectory.createSync(recursive: true);
+  }
   final outputFile = File('${getLibDirectory.path}/app_assets.dart');
-
   ///
   final getAssetFilesList = _getListAssetFiles(getAssetsDirectory);
   outputFile.writeAsStringSync(_writingAssetsClass(getAssetFilesList, folderNames));

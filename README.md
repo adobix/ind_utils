@@ -6,7 +6,7 @@ ind_utils package use this package for Generate Assets file `
 
 ```yaml
 dependencies:
-  ind_utils: ^1.0.3
+  ind_utils: ^1.0.5
 ```
 ## Run the generator
 - when u will run this cmd you will get
@@ -24,12 +24,17 @@ dart pub run ind_utils:screen
          └─ profile_repository.dart       
          └─ profile_repository_interface.dart   
      ├─ widget
+          └─ widget_name.dart
+     ├─ model
          
 ```
 
 ## Run the generator:
 - Assets file and Put images in class
-- Here 👇👇👇 - First Go that directory where you wanna create assets .
+- Here 👇👇👇
+1. Make sure Stay in Project Directory
+2. Go that directory where you wanna This.
+
 - To execute the following command: 
 ```
 dart pub run ind_utils:assets
