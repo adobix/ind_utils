@@ -58,7 +58,7 @@ void main() {
     }
 
     ///  creating widget dart file here ---
-    final widgetsDartInput = Input(prompt: 'Enter Your All Widget Name:  ').interact();
+    final widgetsDartInput = Input(prompt: 'Enter Your one Widget Name:  ').interact();
     final widgetsDart = File('${screenNameDir.path}/widgets/$widgetsDartInput.dart');
     if (!widgetsDart.existsSync()) {
       widgetsDart.createSync(recursive: true);
@@ -72,7 +72,7 @@ void main() {
   final modelInput = Input(prompt: 'Do you want to Model Directory? (y/n): ').interact();
   if (modelInput == 'y') {
     /// creating widget directory here ---
-    final widgetDirName = Directory('${screenNameDir.path}/Model');
+    final widgetDirName = Directory('${screenNameDir.path}/model');
     if (!widgetDirName.existsSync()) {
       widgetDirName.createSync();
       CliLogger.repositoryLog("Model Directory Generated Successfully");

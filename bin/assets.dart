@@ -10,26 +10,41 @@ void main() {
   CliLogger.info('Inserting Assets images ...\n');
 
   /// Check Assets Directory
-  if (!Directory('${flutterProjectRoot.path}/assets').existsSync()) {
-    CliLogger.error('Please Create Assets File And Insert Images', level: CliLoggerLevel.two);
+  final assetsDir = Directory('${flutterProjectRoot.path}/assets');
+  if (!assetsDir.existsSync()) {
+    CliLogger.error('Please Create Assets Folder And Insert Images', level: CliLoggerLevel.two);
     exit(1);
   }
-  ///
-  final getAssetsDirectory = Directory('${flutterProjectRoot.path}/assets');
-  final assetDirs = getAssetsDirectory.listSync(recursive: false).whereType<Directory>().toList();
+
+  /// Get all subdirectories of the 'assets' directory recursively
+  final assetDirs = _getSubdirectories(assetsDir);
+  if (assetDirs.isEmpty) {
+    CliLogger.error('No subdirectories found in the assets folder.', level: CliLoggerLevel.two);
+    exit(1);
+  }
+
   final folderNames = assetDirs.map((dir) => p.basename(dir.path)).toList();
-  ///
-  print("Where your wanna create this file: example - lib/src/styles/ ");
-  final appAssetsInput = Input(prompt: 'Where your wanna create this file: ').interact();
+
+  print("Where do you want to create this file: example - lib/src/styles/");
+  final appAssetsInput = Input(prompt: 'Where do you want to create this file: ').interact();
   final getLibDirectory = Directory('${flutterProjectRoot.path}/$appAssetsInput');
-  if(!getLibDirectory.existsSync()){
+  if (!getLibDirectory.existsSync()) {
     getLibDirectory.createSync(recursive: true);
   }
   final outputFile = File('${getLibDirectory.path}/app_assets.dart');
-  ///
-  final getAssetFilesList = _getListAssetFiles(getAssetsDirectory);
+
+  final getAssetFilesList = _getListAssetFiles(assetsDir);
   outputFile.writeAsStringSync(_writingAssetsClass(getAssetFilesList, folderNames));
+
   CliLogger.endLog();
+}
+
+List<String> _getListAssetFiles(Directory assetsDir) {
+  final allFiles = <String>[];
+  assetsDir.listSync(recursive: true).whereType<File>().forEach((file) {
+    allFiles.add(file.path);
+  });
+  return allFiles;
 }
 
 String _writingAssetsClass(List<String> files, List<String> folderNames) {
@@ -62,12 +77,10 @@ void _writeAssetsName(List<String> files, StringBuffer buffer, String groupName,
   }
 }
 
-List<String> _getListAssetFiles(Directory assetsDir) {
-  final assetDirs = assetsDir.listSync(recursive: false).whereType<Directory>().toList();
-  final allFiles = <String>[];
-  for (var dir in assetDirs) {
-    final files = dir.listSync(recursive: true).whereType<File>().map((file) => file.path).toList();
-    allFiles.addAll(files);
-  }
-  return allFiles;
+List<Directory> _getSubdirectories(Directory directory) {
+  final dirs = <Directory>[];
+  directory.listSync(recursive: true, followLinks: false).forEach((entity) {
+    if (entity is Directory) dirs.add(entity);
+  });
+  return dirs;
 }
