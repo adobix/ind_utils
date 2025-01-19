@@ -19,7 +19,7 @@ code.`
 
 ```yaml
 dependencies:
-  ind_utils: ^1.0.8
+  ind_utils: ^2.0.0
 ```
 
 ## Run the generator
