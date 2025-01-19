@@ -5,12 +5,14 @@ maintainer: Mrr Hak
 homepage: https://indiancreator.in/
 repository: https://github.com/adobix/ind_utils
 issue_tracker: https://github.com/adobix/ind_utils/issues
-version: 1.0.7
+version: 1.0.9
 funding:
   - https://github.com/ansaralisah
 
+logo: assets/logo.webp
+
 screenshots:
-  - description: "Icons Launcher"
+  - description: "Package Ind Utils"
     path: assets/logo.webp
 
 
