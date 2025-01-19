@@ -1,7 +1,10 @@
-## 1.0.7
+## 1.0.8
 
 1. Fix `Issues of `assets issues like sub directory when exit of directory
 2. Fix Issues of screen generator like model and creating model dart 
+## 1.0.7
+
+1. update files
 
 ## 1.0.6
 
