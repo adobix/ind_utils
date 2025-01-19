@@ -12,7 +12,7 @@ funding:
 logo: assets/logo.webp
 
 screenshots:
-  - description: "Ind Utils"
+  - description: "Package Ind Utils"
     path: assets/logo.webp
 
 
