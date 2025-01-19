@@ -9,10 +9,7 @@ version: 1.0.7
 funding:
   - https://github.com/ansaralisah
 
-screenshots:
-  - description: "Icons Launcher"
-    path: assets/logo.webp
-
+logo: assets/logo.webp
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
