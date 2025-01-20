@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 /// printLog here ------
+@Deprecated('Use PrintLogger instead.')
 PrintLog printLog(String message, [dynamic data = '']) =>
     PrintLog(message, data);
 
@@ -10,22 +11,22 @@ class PrintLogger {
 
   /// success
   static void success(dynamic message) {
-    printLog('Success', message).success;
+    PrintLog('Success', message).success;
   }
 
   /// error
   static void error(dynamic message) {
-    printLog('Error', message).error;
+    PrintLog('Error', message).error;
   }
 
   /// warning
   static void warning(dynamic message) {
-    printLog('Warning', message).warning;
+    PrintLog('Warning', message).warning;
   }
 
   /// denied
   static void denied(dynamic message) {
-    printLog('Permission Denied', message).denied;
+    PrintLog('Permission Denied', message).denied;
   }
 }
 
@@ -33,7 +34,7 @@ class PrintLog {
   final String message;
   final dynamic res;
 
-  PrintLog(this.message, this.res);
+  const PrintLog(this.message, this.res);
 
   /// warning here ---
   String get warning => _print('⚠️');
@@ -127,7 +128,7 @@ class PrintLog {
   }
 
   /// final print here---
-  debugModePrint(m0) {
+  void debugModePrint(m0) {
     if (kDebugMode) {
       print(m0);
     }
