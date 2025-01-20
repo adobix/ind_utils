@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of '../../ind_utils.dart';
 
 extension Context on BuildContext {
   /// Get MediaQuery size

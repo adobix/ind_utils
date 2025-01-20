@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:ind_utils/src/utils/cli_logger.dart';
-import 'package:ind_utils/src/utils/utils.dart';
+import 'package:ind_utils/ind_utils.dart';
 import 'package:interact/interact.dart';
 import 'package:path/path.dart' as p;
 import 'dart:io';

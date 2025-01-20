@@ -1,5 +1,4 @@
-import 'dart:convert';
-import 'package:flutter/foundation.dart';
+part of '../../ind_utils.dart';
 
 /// printLog here ------
 @Deprecated('Use PrintLogger instead.')

@@ -1,3 +1,5 @@
+part of '../../ind_utils.dart';
+
 String genStyle() {
   return '''
 library;
