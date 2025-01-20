@@ -1,7 +1,5 @@
 import 'dart:io';
-
 import 'package:ind_utils/src/utils/cli_logger.dart';
-import 'package:ind_utils/src/utils/get_sub_directory.dart';
 import 'package:ind_utils/src/utils/write_assets_name.dart';
 import 'package:interact/interact.dart';
 import 'package:path/path.dart' as p;
@@ -28,11 +26,9 @@ void main() {
   print("Where do you want to create this file: example - lib/src/styles/");
   final appAssetsInput = Input(prompt: 'Where do you want to create this file: ').interact();
   final getLibDirectory = Directory('${flutterProjectRoot.path}/$appAssetsInput');
-
   if (!getLibDirectory.existsSync()) {
     getLibDirectory.createSync(recursive: true);
   }
-
   final outputFile = File('${getLibDirectory.path}/app_assets.dart');
   final getAssetFilesList = getListAssetFiles(assetsDir);
   outputFile.writeAsStringSync(writingAssetsClass(getAssetFilesList, folderNames));

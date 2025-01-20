@@ -1,4 +1,4 @@
-import 'package:ind_utils/src/screens/screen.dart';
+import 'package:ind_utils/src/screen/screen.dart';
 import 'package:ind_utils/src/utils/cli_logger.dart';
 import 'package:ind_utils/src/utils/utils.dart';
 import 'dart:io';
@@ -21,7 +21,7 @@ void main() {
   }
 
   ///Creating Screen Directory
-  final screensDirectory = Directory('${screenNameDir.path}/screens');
+  final screensDirectory = Directory('${screenNameDir.path}/screen');
   if (!screensDirectory.existsSync()) {
     screensDirectory.createSync();
   }

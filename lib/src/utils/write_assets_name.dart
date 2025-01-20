@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:ind_utils/ind_utils.dart';
 import 'package:path/path.dart' as p;
 
@@ -38,4 +37,11 @@ List<String> getListAssetFiles(Directory assetsDir) {
     allFiles.add(file.path);
   });
   return allFiles;
+}
+List<Directory> getSubAssetsDirectories(Directory directory) {
+  final dirs = <Directory>[];
+  directory.listSync(recursive: true, followLinks: false).forEach((entity) {
+    if (entity is Directory) dirs.add(entity);
+  });
+  return dirs;
 }
