@@ -18,14 +18,13 @@ screenshots:
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
-  flutter: ">=3.0.0"
+  flutter: ">=3.27.2"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  path: ^1.8.0
   interact: ^2.2.0
+  path: ^1.9.0
 
 dev_dependencies:
   flutter_test:

@@ -1,3 +1,5 @@
+part of '../../ind_utils.dart';
+
 String generateStatefulWidget(String widgetName) {
   final pascalCaseName = widgetName[0].toUpperCase() + widgetName.substring(1);
   return '''

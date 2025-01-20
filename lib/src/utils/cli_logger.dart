@@ -1,6 +1,4 @@
-import 'package:flutter/foundation.dart';
-
-import 'constants.dart';
+part of '../../ind_utils.dart';
 
 enum CliLoggerLevel { one, two, three }
 

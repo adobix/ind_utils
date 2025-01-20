@@ -1,3 +1,4 @@
+part of '../../ind_utils.dart';
 // ignore_for_file: constant_identifier_names
 
 const String START_MESSAGE = '''

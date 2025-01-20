@@ -1,3 +1,5 @@
+part of '../../ind_utils.dart';
+
 String toCamelCaseAssets(String p0) {
   final pascal = p0
       .split(RegExp(r'[_-]'))

@@ -1,8 +1,6 @@
-import 'package:ind_utils/src/screens/screen.dart';
-import 'package:ind_utils/src/utils/cli_logger.dart';
-import 'package:ind_utils/src/utils/utils.dart';
 import 'dart:io';
 
+import 'package:ind_utils/ind_utils.dart';
 import 'package:interact/interact.dart';
 
 void main() {
