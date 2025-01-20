@@ -13,21 +13,21 @@ void main() {
   /// Create AppColors in src/style
   final appColorFile = File('${stylesDir.path}/app_color.dart');
   if (!appColorFile.existsSync()) {
-    appColorFile.writeAsStringSync(genAppColor());
+    appColorFile.writeAsStringSync(genAppColor);
     CliLogger.screenLog('app_color.dart');
   }
 
   /// Create styles file in src/style
   final stylesFile = File('${stylesDir.path}/styles.dart');
   if (!stylesFile.existsSync()) {
-    stylesFile.writeAsStringSync(genStyle());
+    stylesFile.writeAsStringSync(genStyle);
     CliLogger.screenLog('styles.dart');
   }
 
   /// Create app_edge file in src/style
   final appEdge = File('${stylesDir.path}/app_edge.dart');
   if (!appEdge.existsSync()) {
-    appEdge.writeAsStringSync(genAppEdge());
+    appEdge.writeAsStringSync(genAppEdge);
     CliLogger.screenLog('app_edge.dart');
   }
   CliLogger.endLog();

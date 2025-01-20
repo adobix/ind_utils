@@ -16,7 +16,7 @@ class PrintLogger {
   }
 
   /// warning
-    warning(dynamic message) {
+  warning(dynamic message) {
     printLog('Warning', message).warning;
   }
 
