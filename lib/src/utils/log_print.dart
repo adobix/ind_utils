@@ -2,26 +2,29 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 /// printLog here ------
-PrintLog printLog(String message, [dynamic data = '']) => PrintLog(message, data);
+PrintLog printLog(String message, [dynamic data = '']) =>
+    PrintLog(message, data);
 
 class PrintLogger {
+  const PrintLogger._();
+
   /// success
-  success(dynamic message) {
+  static void success(dynamic message) {
     printLog('Success', message).success;
   }
 
   /// error
-  error(dynamic message) {
+  static void error(dynamic message) {
     printLog('Error', message).error;
   }
 
   /// warning
-    warning(dynamic message) {
+  static void warning(dynamic message) {
     printLog('Warning', message).warning;
   }
 
   /// denied
-  denied(dynamic message) {
+  static void denied(dynamic message) {
     printLog('Permission Denied', message).denied;
   }
 }

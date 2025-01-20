@@ -4,15 +4,15 @@ const String START_MESSAGE = '''
 ┌───────────────────────────────────────────────────────────────────┐
 │ Package:  │ Ind_utils                                             │
 └───────────────────────────────────────────────────────────────────┘''';
- String controllerMessage(String name)=> '''
+String controllerMessage(String name) => '''
 ┌────────────────────────────────────────────────────────────────────────
 │  ✅  $name Controller Created Successfully\x1B[0m                  
 └────────────────────────────────────────────────────────────────────────''';
- String screenMessage(String name)=> '''
+String screenMessage(String name) => '''
 ┌────────────────────────────────────────────────────────────────────────
 │  ✅  $name Screen Created Successfully\x1B[0m                     
 └─────────────────────────────────────────────────────────────────────────''';
- String directoryMessage(String name)=> '''
+String directoryMessage(String name) => '''
 ┌─────────────────────────────────────────────────────────────────────────
 │  ✅  $name Directory Created Successfully\x1B[0m                     
 └─────────────────────────────────────────────────────────────────────────''';

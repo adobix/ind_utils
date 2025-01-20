@@ -9,6 +9,7 @@ part 'app_edge.dart';
 
 ''';
 }
+
 String genAppEdge() {
   return '''
 part of 'styles.dart';
@@ -34,6 +35,7 @@ extension SizedExtensions on num {
 
 ''';
 }
+
 String genAppColor() {
   return '''
 part of 'styles.dart';

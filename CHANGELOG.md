@@ -1,3 +1,6 @@
+## 2.0.11
+1. Add .pubignore file
+
 ## 2.0.1
 1. Fix `Issues of `assets issues like sub directory when exit of directory
 2. Fix Issues of screen generator like model and creating model dart 
