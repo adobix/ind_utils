@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:ind_utils/src/screen/style.dart';
 import 'package:ind_utils/src/utils/cli_logger.dart';
 
-void main() {
+void main() { 
   CliLogger.startedLog();
   final currentDirectory = Directory(Directory.current.path);
 
