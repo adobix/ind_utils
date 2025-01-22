@@ -1,5 +1,5 @@
 name: ind_utils
-description: Ind_utils package to simplify use for SizedBox, beautiful Log, creating screens, styles, write assets images file code
+description: Ind_utils package to simplify use for SizedBox, beautiful Log, creating screen, styles, write assets images file code
 license: MIT
 maintainer: AdobixTech
 homepage: https://indiancreator.in/
@@ -18,7 +18,7 @@ screenshots:
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
-  flutter: ">=3.27.2"
+  flutter: ">=3.27.1"
 
 dependencies:
   flutter:
@@ -34,6 +34,6 @@ dev_dependencies:
 
 topics:
   - assets
-  - screens
+  - screen
   - styles
   - logs

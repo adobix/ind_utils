@@ -1,6 +1,6 @@
 import 'dart:io';
-
-import 'package:ind_utils/ind_utils.dart';
+import 'package:ind_utils/src/screen/style.dart';
+import 'package:ind_utils/src/utils/cli_logger.dart';
 
 void main() {
   CliLogger.startedLog();

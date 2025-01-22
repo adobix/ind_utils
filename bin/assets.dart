@@ -1,5 +1,5 @@
-import 'package:flutter/foundation.dart';
-import 'package:ind_utils/ind_utils.dart';
+import 'package:ind_utils/src/utils/cli_logger.dart';
+import 'package:ind_utils/src/utils/utils.dart';
 import 'package:interact/interact.dart';
 import 'package:path/path.dart' as p;
 import 'dart:io';
@@ -12,36 +12,29 @@ void main() {
   /// Check Assets Directory
   final assetsDir = Directory('${flutterProjectRoot.path}/assets');
   if (!assetsDir.existsSync()) {
-    CliLogger.error('Please Create Assets Folder And Insert Images',
-        level: CliLoggerLevel.two);
+    CliLogger.error('Please Create Assets Folder And Insert Images', level: CliLoggerLevel.two);
     exit(1);
   }
 
   /// Get all subdirectories of the 'assets' directory recursively
   final assetDirs = _getSubdirectories(assetsDir);
   if (assetDirs.isEmpty) {
-    CliLogger.error('No subdirectories found in the assets folder.',
-        level: CliLoggerLevel.two);
+    CliLogger.error('No subdirectories found in the assets folder.', level: CliLoggerLevel.two);
     exit(1);
   }
 
   final folderNames = assetDirs.map((dir) => p.basename(dir.path)).toList();
 
-  if (kDebugMode) {
-    print("Where do you want to create this file: example - lib/src/styles/");
-  }
-  final appAssetsInput =
-      Input(prompt: 'Where do you want to create this file: ').interact();
-  final getLibDirectory =
-      Directory('${flutterProjectRoot.path}/$appAssetsInput');
+  print("Where do you want to create this file: example - lib/src/styles/");
+  final appAssetsInput = Input(prompt: 'Where do you want to create this file: ').interact();
+  final getLibDirectory = Directory('${flutterProjectRoot.path}/$appAssetsInput');
   if (!getLibDirectory.existsSync()) {
     getLibDirectory.createSync(recursive: true);
   }
   final outputFile = File('${getLibDirectory.path}/app_assets.dart');
 
   final getAssetFilesList = _getListAssetFiles(assetsDir);
-  outputFile
-      .writeAsStringSync(_writingAssetsClass(getAssetFilesList, folderNames));
+  outputFile.writeAsStringSync(_writingAssetsClass(getAssetFilesList, folderNames));
 
   CliLogger.endLog();
 }
@@ -61,33 +54,26 @@ String _writingAssetsClass(List<String> files, List<String> folderNames) {
     final folder = folderNames[i];
     buffer.writeln('\n  /* $folder Folder */');
     buffer.writeln('  static const String $folder = \'${'assets/$folder'}\';');
-    final folderFiles =
-        files.where((file) => p.dirname(file).endsWith(folder)).toList();
-    CliLogger.success('$folder Folder Generated Successfully',
-        level: CliLoggerLevel.two);
+    final folderFiles = files.where((file) => p.dirname(file).endsWith(folder)).toList();
+    CliLogger.success('$folder Folder Generated Successfully', level: CliLoggerLevel.two);
     if (i == folderNames.length - 1) {
-      if (kDebugMode) {
-        print('');
-      }
+      print('');
     }
     _writeAssetsName(folderFiles, buffer, '\$$folder', folder);
   }
 
   buffer.writeln('}');
-  CliLogger.success('Assets Dart file Created Successfully\n',
-      level: CliLoggerLevel.one);
+  CliLogger.success('Assets Dart file Created Successfully\n', level: CliLoggerLevel.one);
   return buffer.toString();
 }
 
-void _writeAssetsName(List<String> files, StringBuffer buffer, String groupName,
-    String folderName) {
+void _writeAssetsName(List<String> files, StringBuffer buffer, String groupName, String folderName) {
   for (var file in files) {
     final name = p.basenameWithoutExtension(file);
     final camelCaseName = toCamelCaseAssets(name);
     final extension = p.extension(file).substring(1);
     String imageName = folderName[0].toUpperCase() + folderName.substring(1);
-    buffer.writeln(
-        '  static const String ${camelCaseName + imageName} = \'$groupName/$name.$extension\';');
+    buffer.writeln('  static const String ${camelCaseName + imageName} = \'$groupName/$name.$extension\';');
   }
 }
 

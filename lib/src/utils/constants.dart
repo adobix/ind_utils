@@ -1,19 +1,18 @@
-part of '../../ind_utils.dart';
 // ignore_for_file: constant_identifier_names
 
 const String START_MESSAGE = '''
 ┌───────────────────────────────────────────────────────────────────┐
-│ Package:  │ ind_utils                                             │
+│ Package:  │ Ind_utils                                             │
 └───────────────────────────────────────────────────────────────────┘''';
-String controllerMessage(String name) => '''
+ String controllerMessage(String name)=> '''
 ┌────────────────────────────────────────────────────────────────────────
 │  ✅  $name Controller Created Successfully\x1B[0m                  
 └────────────────────────────────────────────────────────────────────────''';
-String screenMessage(String name) => '''
+ String screenMessage(String name)=> '''
 ┌────────────────────────────────────────────────────────────────────────
 │  ✅  $name Screen Created Successfully\x1B[0m                     
 └─────────────────────────────────────────────────────────────────────────''';
-String directoryMessage(String name) => '''
+ String directoryMessage(String name)=> '''
 ┌─────────────────────────────────────────────────────────────────────────
 │  ✅  $name Directory Created Successfully\x1B[0m                     
 └─────────────────────────────────────────────────────────────────────────''';
