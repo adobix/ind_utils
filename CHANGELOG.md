@@ -1,3 +1,6 @@
+## 2.0.12
+1. Fix Issues of Package
+
 ## 2.0.11
 1. Add .pubignore file
 
