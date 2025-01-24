@@ -1,5 +1,4 @@
 import 'package:ind_utils/ind_utils.dart';
-import 'package:ind_utils/src/generator/screen_generator.dart';
 import 'package:interact/interact.dart';
 import 'dart:io';
 
