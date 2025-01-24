@@ -1,4 +1,7 @@
-import 'package:ind_utils/ind_utils.dart';
+import 'package:ind_utils/src/constants/file_case.dart';
+import 'package:ind_utils/src/generator/screen_generator.dart';
+import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/screen/screen.dart';
 import 'package:interact/interact.dart';
 import 'dart:io';
 
@@ -9,7 +12,7 @@ void main() {
   CliLogger.info('Ready To Create Dart File Based on Structures ...\n');
   // Enter Screen Name which is lower case that will be create as directory and also create screen file
   final screenName = Input(prompt: 'Enter screen Name?: ').interact();
-  //
+  // Screen name
   Directory screenNameDirectory = _createScreenDirectoryName(screenName);
   //Creating Screen Directory
   Directory screensDirectory = _createScreenDirectory(screenNameDirectory);

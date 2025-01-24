@@ -1,6 +1,8 @@
-import 'package:ind_utils/ind_utils.dart';
-import 'package:interact/interact.dart';
 import 'dart:io';
+import 'package:ind_utils/src/constants/file_case.dart';
+import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/screen/screen.dart';
+import 'package:interact/interact.dart';
 
 class ScreenGenerator {
   static providerFile(String screenName) {
