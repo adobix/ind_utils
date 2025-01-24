@@ -42,7 +42,6 @@ String generateRepository(String repositoryName, String? repoInterface) {
   if (repoInterface == null) {
     return '''
 import 'package:flutter/material.dart';
-
 class $repositoryName {
   // $repositoryName logic here
 }
