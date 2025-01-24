@@ -1,5 +1,6 @@
-import 'package:ind_utils/ind_utils.dart';
-import 'package:path/path.dart'as p;
+import 'package:ind_utils/src/constants/file_case.dart';
+import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:path/path.dart' as p;
 
 class WriteAssetsClass {
  static  String writingAssets(List<String> files, List<String> folderNames) {

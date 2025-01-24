@@ -1,4 +1,5 @@
-import '../constants/constants.dart';
+
+import 'package:ind_utils/src/constants/constants.dart';
 
 enum CliLoggerLevel { one, two, three }
 

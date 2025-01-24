@@ -1,5 +1,7 @@
 import 'dart:io';
-import 'package:ind_utils/ind_utils.dart';
+import 'package:ind_utils/src/assets_gen/get_directory.dart';
+import 'package:ind_utils/src/assets_gen/write_assets_class.dart';
+import 'package:ind_utils/src/logs/cli_logger.dart';
 import 'package:interact/interact.dart';
 import 'package:path/path.dart' as p;
 
@@ -31,6 +33,7 @@ void main() {
   // End Message
   CliLogger.endLog();
 }
+
 // Get your Project Directory
 Directory getProjectDirectory(Directory flutterProjectRoot, String appAssetsInput) {
   final getLibDirectory = Directory('${flutterProjectRoot.path}/$appAssetsInput');
@@ -39,6 +42,7 @@ Directory getProjectDirectory(Directory flutterProjectRoot, String appAssetsInpu
   }
   return getLibDirectory;
 }
+
 // Create Asset Dart File with code Template
 void _appAssetsDartFile(Directory getLibDirectory, Directory flutterProjectRoot, List<Directory> assetDirectory) {
   final outputFile = File('${getLibDirectory.path}/app_assets.dart');

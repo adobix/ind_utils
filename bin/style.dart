@@ -1,6 +1,7 @@
 import 'dart:io';
-import 'package:ind_utils/src/screen/style.dart';
+
 import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/screen/style.dart';
 
 void main() {
   CliLogger.startedLog();
@@ -41,7 +42,6 @@ void _createStyleFile(Directory stylesDir) {
     CliLogger.screenLog('styles.dart');
   }
 }
-
 //
 void _createAppEdge(Directory stylesDir) {
   final appEdge = File('${stylesDir.path}/app_edge.dart');
@@ -50,4 +50,3 @@ void _createAppEdge(Directory stylesDir) {
     CliLogger.screenLog('app_edge.dart');
   }
 }
-//
