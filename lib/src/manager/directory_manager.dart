@@ -1,9 +1,17 @@
 // directory_manager.dart
 import 'dart:io';
 import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'file_manager.dart';
 
 class DirectoryManager {
-  /// Retrieves the 'assets' directory and checks for existence.
+  static void createStructure(String screenName) {
+  final baseDirectory = _createBaseDirectory(screenName);
+  final screenDirectory = _createScreenSubdirectory(baseDirectory);
+  FileManager.generateFiles(screenDirectory, screenName);
+
+}
+
+/// Retrieves the 'assets' directory and checks for existence.
   static Directory getAssetsDirectory() {
     final assetsDir = Directory('${Directory.current.path}/assets');
     if (!assetsDir.existsSync()) {
@@ -27,23 +35,15 @@ class DirectoryManager {
     return targetDir;
   }
 
-  static void createStructure(String screenName) {
-    final baseDirectory = _createBaseDirectory(screenName);
-    final screenDirectory = _createScreenSubdirectory(baseDirectory);
-
-    FileManager.generateFiles(screenDirectory, screenName);
-  }
 
   /// Creates the base directory for the screen.
   static Directory _createBaseDirectory(String screenName) {
     final baseDirPath = '${Directory.current.path}/${screenName.toLowerCase()}';
     final baseDir = Directory(baseDirPath);
-
     if (!baseDir.existsSync()) {
       baseDir.createSync(recursive: true);
       CliLogger.directoryLog(screenName);
     }
-
     return baseDir;
   }
 
@@ -51,11 +51,9 @@ class DirectoryManager {
   static Directory _createScreenSubdirectory(Directory baseDirectory) {
     final screenDirPath = '${baseDirectory.path}/screen';
     final screenDir = Directory(screenDirPath);
-
     if (!screenDir.existsSync()) {
       screenDir.createSync();
     }
-
     return screenDir;
   }
 }
