@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:ind_utils/src/constants/file_case.dart';
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 import 'package:interact/interact.dart';
 import '../constants/constants.dart';
 

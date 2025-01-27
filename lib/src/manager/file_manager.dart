@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:ind_utils/src/constants/file_case.dart';
 import 'package:ind_utils/src/generator/screen_generator.dart';
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 
 class FileManager {
   /// Generates the necessary files for the given screen.

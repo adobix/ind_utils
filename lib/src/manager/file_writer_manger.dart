@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:ind_utils/src/constants/file_case.dart';
 import 'package:path/path.dart' as p;
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 
 class FileWriter {
   /// Generates the app_assets.dart file with the asset mappings.

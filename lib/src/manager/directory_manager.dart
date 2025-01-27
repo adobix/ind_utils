@@ -1,6 +1,6 @@
 // directory_manager.dart
 import 'dart:io';
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 import 'file_manager.dart';
 
 class DirectoryManager {

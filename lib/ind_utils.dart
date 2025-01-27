@@ -4,5 +4,8 @@ export 'src/constants/constants.dart';
 export 'src/constants/file_case.dart';
 export 'src/extension/extension.dart';
 export 'src/generator/screen_generator.dart';
-export 'src/logs/print_log.dart';
-export 'src/logs/cli_logger.dart';
+// Log
+export 'src/print_log/cli_logger.dart';
+export 'src/print_log/print_log.dart';
+export 'src/print_log/print_logger.dart';
+export 'src/print_log/print_utils.dart';

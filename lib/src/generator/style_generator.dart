@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:ind_utils/src/constants/constants.dart';
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 
 class StyleGenerator {
   /// Entry point to generate styles directory and files.

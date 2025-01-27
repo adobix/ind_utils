@@ -1,4 +1,4 @@
-import 'package:ind_utils/src/logs/cli_logger.dart';
+import 'package:ind_utils/src/print_log/cli_logger.dart';
 import 'package:ind_utils/src/manager/directory_manager.dart';
 import 'package:interact/interact.dart';
 
